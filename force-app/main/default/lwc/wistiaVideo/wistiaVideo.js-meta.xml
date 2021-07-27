@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Wistia Video</masterLabel>
+    <description>Add Video Thumbnails From your connected Wistia account to Lightning Email Templatess</description>
+       <targets>
+      <target>lightningStatic__Email</target>
+   </targets>
+   <targetConfigs>
+      <targetConfig targets="lightningStatic__Email">
+         <property
+            required="true"
+            name="destinationUrl"
+            type="String"
+            label="Destination Url"
+            description="The webpage URL where a user is taken to when they click the thumbnail"
+         />
+         <property
+            name="wistiaThumbnailUrl"
+            type="String"
+            default=""
+            label="Select a Video"
+            description="Select a Wistia Video from the connected account"
+            datasource="apex://WistiaMediaPicker"
+         />
+        <property
+            required="true"
+            name="thumbnailAltText"
+            type="String"
+            default="Play Video"
+            label="Alternate Text for the thumbnail image"
+            description="Include alt text for screen readers on thumbnail images that include essential information, or to be displayed when images are not available"
+         />
+         <property
+            name="imageWidth"
+            type="String"
+            default="450"
+            label="Thumbnail Image Width"
+            description="Enter the width of the thumbnail either as: whole number (Eg. 400), percentage(100%), or auto"
+         />
+         <property
+            name="imageHeight"
+            type="String"
+            default="auto"
+            label="Thumbnail Image Height"
+            description="Enter the width of the thumbnail either as: whole number (Eg. 400), percentage(100%), or auto"
+         />
+         <property
+            name="playButtonSize"
+            type="String"
+            default="Large"
+            label="Play Button Size"
+            description="Select the size for the play button to appear over the thumbnail (Small, Large)"
+            datasource="Small,Large"
+         />
+         <property
+            name="playButtonColor"
+            type="Color"
+            default="#2d42e9"
+            label="Play Button Color"
+            description="Select Color for the thumbnail play button"
+         />
+      </targetConfig>
+   </targetConfigs>
+</LightningComponentBundle>
