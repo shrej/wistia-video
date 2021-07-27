@@ -18,8 +18,7 @@ This component connects your Wistia Account with the new Lightning Email Builder
 
 You can perform the setup in 4 easy steps:
 
-1. Get a Wistia API Key
-   Creating a Wistia API key is really straightforward. We strongly recommend creating a brand new key with only 'Read all project and video data'. Copy the newly generated token. We will use it to authenticate to Wistia. Please see the official documentation from Wistia for more information [here.](https://wistia.com/support/developers/data-api#creating-and-managing-access-tokens)
+1. **Get a Wistia API Key**: Creating a Wistia API key is really straightforward. We strongly recommend creating a brand new key with only 'Read all project and video data'. Copy the newly generated token. We will use it to authenticate to Wistia. Please see the official documentation from Wistia for more information [here.](https://wistia.com/support/developers/data-api#creating-and-managing-access-tokens)
    ![Getting a Wistia API Token](assets/img/wistia-api-token.png)
 
 1. Go to Salesforce Setup and search for 'Named Credentials'.
